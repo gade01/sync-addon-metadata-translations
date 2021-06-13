@@ -9,6 +9,7 @@ on:
 
 jobs:
   default:
+    if: github.repository == 'xbmc/audioencoder.timidity'
     runs-on: ubuntu-latest
 
     strategy:
