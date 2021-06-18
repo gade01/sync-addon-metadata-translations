@@ -9,7 +9,7 @@ on:
 
 jobs:
   default:
-    if: github.repository == 'xbmc/audioencoder.timidity'
+    if: github.repository == 'kodi-game/game.libretro.3dengine'
     runs-on: ubuntu-latest
 
     strategy:
