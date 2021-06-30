@@ -2,14 +2,14 @@ name: Sync addon metadata translations
 
 on:
   push:
-    branches: [ master, main ]
+    branches: [ Matrix, Nexus ]
     paths:
       - '**addon.xml'
       - '**resource.language.**strings.po'
 
 jobs:
   default:
-    if: github.repository == 'kodi-game/game.libretro.3dengine'
+    if: github.repository == 'kodi-pvr/pvr.hts'
     runs-on: ubuntu-latest
 
     strategy:
@@ -55,4 +55,3 @@ jobs:
           branch: amt-sync
           delete-branch: true
           path: ./project
-          reviewers: gade01
