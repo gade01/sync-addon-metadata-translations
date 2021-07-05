@@ -17,6 +17,7 @@ on:
 
 jobs:
   default:
+    if: github.repository == 'xbmc/xbmc'
     runs-on: ubuntu-latest
 
     strategy:
